@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // title, description, posterURL, rating
 
-const MovieCard = ({ title, description, posterUrl, rating, del }) => {
+const MovieCard = ({ title, description, posterUrl, rating, del, trailer }) => {
     return (
         <>
             <Card style={{ width: '18rem' }}>
@@ -24,6 +24,7 @@ const MovieCard = ({ title, description, posterUrl, rating, del }) => {
                 </ListGroup>
                 <Card.Body>
                     <Card.Link href="#" onClick={del}>Delete Movie</Card.Link>
+                    <Card.Link href={trailer}>Movie trailer</Card.Link>
                 </Card.Body>
             </Card>
 

@@ -1,14 +1,15 @@
 import './App.css';
-import { Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import SampleMovies from './SampleMovies';
 import Filter from './components/Filter';
 import MovieList from './components/MovieList';
-import EOT from './components/EoT';
+import NavBar  from './components/NavBar';
 
 function App() {
   return (
     <>
       <Filter />
+      <NavBar />
       <MovieList />
       <SampleMovies  />
     </>

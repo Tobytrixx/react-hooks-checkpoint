@@ -68,6 +68,7 @@ const MovieList = () => {
                         posterUrl={movie.posterUrl}
                         rating={movie.rating}
                         del={() => handleDelete(key)}
+                        trailer={movie.trailer}
                     />
                 ))}
             </div>
